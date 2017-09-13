@@ -89,6 +89,7 @@ extern "C" {
 #define	GPIO_SD_OUTPUT	0x0020
 #define	GPIO_SI_OUTPUT	0x0040
 #define	GPIO_SO_OUTPUT	0x0080
+#define	GPIO_IRQ		0x0100
 
 
 #define REG_SIOCNT		*(vu16*)(REG_BASE + 0x128)	// Serial Communication Control

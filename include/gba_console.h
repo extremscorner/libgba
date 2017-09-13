@@ -52,6 +52,8 @@ extern "C" {
 #define CON_ERASE()		"\033[K"			
 #define CON_CLL(_y)		CON_POS(1,_y) CON_ERASE()
 
+void consoleCls(void);
+
 void consoleInit(	int charBase, int mapBase, int background,
 					const u8* font, int fontsize, int palette);
 

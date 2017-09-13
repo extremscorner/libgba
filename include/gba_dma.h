@@ -83,7 +83,7 @@ extern "C" {
 	REG_DMA##channel##CNT = DMA_ENABLE | (mode); \
 }
 
-static inline void dmaCopy(const void * source, void * dest, u32 size) {
+static inline void dmaCopy(const volatile void * source, volatile void * dest, u32 size) {
 	DMA_Copy(3, source, dest, DMA16 | size>>1);
 }
 
